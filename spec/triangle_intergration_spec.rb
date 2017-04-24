@@ -33,4 +33,14 @@ describe('the triangle path', {:type => :feature}) do
     click_button('Go!')
     expect(page).to have_content('Scalene!')
   end
+
+  it('processes user entry to determine type of triangle entered') do
+    visit('/')
+    fill_in('side1', :with => '5')
+    fill_in('side2', :with => '77')
+    fill_in('side3', :with => '6')
+
+    click_button('Go!')
+    expect(page).to have_content('Not a Triangle!')
+  end
 end
