@@ -25,17 +25,17 @@ get('/triangle') do
   erb(:triangle)
 end
 
-define_method(:which?) do
-  result = 'scalene'
-  dimensions = [@side1, @side2, @side3]
-  if dimensions.triangle?
-    if dimensions.equilateral?
-      result = 'equilateral'
-    elsif dimensions.isoceles?
-      result = 'isoceles'
-    end
-  else
-    result = 'not a triangle'
-  end
-  result
-end
+# define_method(:which?) do
+#   result = 'scalene'
+#   dimensions = [@side1, @side2, @side3]
+#   if dimensions.triangle?
+#     if dimensions.equilateral?
+#       result = 'equilateral'
+#     elsif dimensions.isoceles?
+#       result = 'isoceles'
+#     end
+#   else
+#     result = 'not a triangle'
+#   end
+#   result
+# end

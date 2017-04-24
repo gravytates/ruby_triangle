@@ -1,8 +1,8 @@
 <h1>Your triangle is:</h1>
-<% if @new_triangle.triangle? %>
-  <% if @new_triangle.equilateral? %>
+<% if @new_triangle.triangle?() %>
+  <% if @new_triangle.equilateral?() %>
     <h2>Equilateral!</h2>
-  <% elsif @new_triangle.isoceles? %>
+  <% elsif @new_triangle.isoceles?() %>
     <h2>Isoceles!</h2>
   <% else %>
     <h2>Scalene!</h2>
