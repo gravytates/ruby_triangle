@@ -10,4 +10,12 @@ class Triangle
     dimensions[2].<(dimensions[0].+(dimensions[1]))
   end
 
+  define_method(:equilateral?) do
+    [@side1, @side2, @side3].uniq.length.==(1)
+  end
+
+  define_method(:isoceles?) do
+    [@side1, @side2, @side3].uniq.length.==(2)
+  end
+
 end
